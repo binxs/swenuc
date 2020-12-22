@@ -1,13 +1,29 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
-   "width": 800,
-  "height": 600,
-  "padding": 5,
-  "data": {"url": "production.json"},
-  "mark": "point",
+  "description": "Nuclear Production, 3 days overview",
+  "width":800,
+  "height":600,
+  "data": {
+    "values": [
+      {"timestamp": 1608392946000, "unit":"R3", "power": 528},
+      {"timestamp": 1608663186444, "unit":"R4", "power": 529},
+      {"timestamp": 1608672146444, "unit":"R3", "power": 530},
+      {"timestamp": 1608683186444, "unit":"R4", "power": 531},
+      {"timestamp": 1608692146444, "unit":"R3", "power": 532}
+    ]
+  },
+  "mark": {
+    "type": "line",
+    "point": true
+  },
   "encoding": {
-    "x": {"field": "Horsepower", "type": "quantitative"},
-    "y": {"field": "Miles_per_Gallon", "type": "quantitative"}
+    "x": {"field": "timestamp", "type": "temporal", "timeUnit": "monthdatehoursminutes", "axis": {"grid": true, "title":"Time"}},
+    "y": {"field": "power", "axis": {"grid": true, "title":"Power, MW"}},
+    "color": {"field": "unit", "type": "nominal", "scale": {"domain": ["F1", "F2", "F3", "O3", "R3", "R4"],"range": ["#d95f02", "#e6ab02", "#a6761d", "#66a61e", "#7570b3", "#393b79"]}},
+    "tooltip": [
+      {"field": "unit", "type": "nominal", "title": "Unit"},
+      {"field": "power", "type": "quantitative", "title": "Power"},
+      {"field": "timestamp", "type": "temporal", "title": "Date"}
+    ]
   }
 }
