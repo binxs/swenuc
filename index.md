@@ -1,12 +1,12 @@
 <div id="html" markdown="0">
-<h1>HTML part</h1>
+<div id="vis"></div>
 
-  <ul>
-    <li>Foo</li>
-    <li>Bar</li>
-  </ul>
-
-</div>
+<script type="text/javascript">
+  var spec = "bar-chart.vg.json";
+  vegaEmbed('#vis', spec).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script></div>
 
 ## Welcome to GitHub Pages
 
