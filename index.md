@@ -25,6 +25,8 @@
   }).catch(console.error);
 </script></div>
 
-### Where is data coming from?
+### About
 
 Data is collected from publicly available sources at home pages for respective producer.
+
+(C) 2021 Gennady Loskutov
