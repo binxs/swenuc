@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "Nuclear Production, 3 days overview",
   "width":800,
-  "height":600,
+  "height":400,
   "data": {
     "values": [
       {"timestamp": 1608392946000, "unit":"R3", "power": 528},
