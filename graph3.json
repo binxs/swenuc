@@ -14,16 +14,17 @@
   },
   "mark": {
     "type": "line",
-    "point": true
+    "point": true,
+    "size":3
   },
   "encoding": {
     "x": {"field": "timestamp", "type": "temporal", "timeUnit": "monthdatehoursminutes", "axis": {"grid": true, "title":"Time"}},
-    "y": {"field": "power", "axis": {"grid": true, "title":"Power, MW"}},
-    "color": {"field": "unit", "type": "nominal", "scale": {"domain": ["F1", "F2", "F3", "O3", "R3", "R4"],"range": ["#d95f02", "#e6ab02", "#a6761d", "#66a61e", "#7570b3", "#393b79"]}},
+    "y": {"field": "power", "type": "quantitative", "scale":{"domain":[0,1500]}, "axis": {"grid": true, "title":"Power, MW"}},
+    "color": {"field": "unit", "type": "nominal", "title":"Unit", "scale": {"domain": ["F1", "F2", "F3", "O3", "R3", "R4"],"range": ["#d95f02", "#e6ab02", "#a6761d", "#66a61e", "#7570b3", "#393b79"]}},
     "tooltip": [
       {"field": "unit", "type": "nominal", "title": "Unit"},
       {"field": "power", "type": "quantitative", "title": "Power"},
-      {"field": "timestamp", "type": "temporal", "title": "Date"}
+      {"field": "timestamp", "type": "temporal", "title": "Date", "timeUnit":"monthdatehoursminutesseconds"}
     ]
   }
 }
