@@ -27,6 +27,6 @@
 
 ### About
 
-Data is scraped from the publicly available sites of the producers ([Forsmark (F1, F2, F3)](https://group.vattenfall.com/se/var-verksamhet/forsmark), [Oskarshamn (O3)](https://www.okg.se/en), [Ringhals (R3, R3)](https://group.vattenfall.com/se/var-verksamhet/ringhals)).
+Data is scraped from the publicly available sites of the producers - [Forsmark (F1, F2, F3)](https://group.vattenfall.com/se/var-verksamhet/forsmark), [Oskarshamn (O3)](https://www.okg.se/en), [Ringhals (R3, R3)](https://group.vattenfall.com/se/var-verksamhet/ringhals).
 
 &copy; 2021 Gennady Loskutov
