@@ -1,7 +1,7 @@
 <div id="html" markdown="0">
-<div id="vis"></div>
+<div id="vis" markdown="0"></div>
 
-<script type="text/javascript">
+<script type="text/javascript" markdown="0">
   var spec = "bar-chart.vg.json";
   vegaEmbed('#vis', spec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
