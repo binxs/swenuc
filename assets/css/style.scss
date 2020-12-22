@@ -1,13 +1,13 @@
-@import "{{ site.theme }}";
+---
+---
 
+@import "{{ site.theme }}";
 .wrapper {
   width:1280px;
 }
-
 header {
   width:280px;
 }
-
 section {
   width:1000px;
 }
