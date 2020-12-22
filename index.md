@@ -25,6 +25,6 @@
   }).catch(console.error);
 </script></div>
 
-### Where data is coming from?
+### Where is data coming from?
 
 Data is collected from publicly available sources at home pages for respective producer.
