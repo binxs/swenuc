@@ -1,3 +1,10 @@
+---
+layout: default
+title: Home
+---
+
+{% include graph.html %}
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/binxs/swenuc/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
