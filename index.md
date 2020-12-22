@@ -1,6 +1,6 @@
 # Production Tracker
 
-## Last 3 days
+## 3 Days Overview
 
 <div id="html" markdown="0">
 <div id="day3" markdown="0"></div>
@@ -13,7 +13,7 @@
   }).catch(console.error);
 </script></div>
 
-## Last month
+## Month Overview
 
 <div id="html" markdown="0">
 <div id="month1" markdown="0"></div>
