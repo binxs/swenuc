@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Swedish Nuclear Production Tracker
 ---
 {% include graph.html %}
