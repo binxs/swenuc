@@ -29,4 +29,4 @@
 
 Data is scraped from the publicly available sites of the producers (Vattenfall, OKG).
 
-(C) 2021 Gennady Loskutov
+&copy; 2021 Gennady Loskutov
