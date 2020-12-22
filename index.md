@@ -1,8 +1,3 @@
----
-layout: default
-title: Home
----
-
 {% include graph.html %}
 
 ## Welcome to GitHub Pages
