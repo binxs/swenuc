@@ -1,3 +1,7 @@
+---
+layout: page
+title: Swedish Nuclear Production Tracker
+---
 {% include graph.html %}
 
 ## Welcome to GitHub Pages
