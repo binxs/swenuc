@@ -1,8 +1,12 @@
----
-layout: default
-title: Swedish Nuclear Production Tracker
----
-{% include graph.html %}
+<div id="html" markdown="0">
+<h1>HTML part</h1>
+
+  <ul>
+    <li>Foo</li>
+    <li>Bar</li>
+  </ul>
+
+</div>
 
 ## Welcome to GitHub Pages
 
