@@ -27,6 +27,6 @@
 
 ### About
 
-Data is collected from publicly available sources at home pages for respective producer.
+Data is scraped from the publicly available sites of the producers (Vattenfall, OKG).
 
 (C) 2021 Gennady Loskutov
