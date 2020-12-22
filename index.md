@@ -3,7 +3,8 @@
 
 <script type="text/javascript" markdown="0">
   var spec = "bar-chart.vg.json";
-  vegaEmbed('#vis', spec).then(function(result) {
+  var opt = { actions: {export: true, source: false, compiled: false, editor: false}};
+  vegaEmbed('#vis', spec, opt).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script></div>
