@@ -5,26 +5,30 @@
   "height":400,
   "data": {
     "values": [
-      {"timestamp": 1608392946000, "unit":"R3", "power": 528},
-      {"timestamp": 1608663186444, "unit":"R4", "power": 529},
-      {"timestamp": 1608672146444, "unit":"R3", "power": 530},
-      {"timestamp": 1608683186444, "unit":"R4", "power": 531},
-      {"timestamp": 1608692146444, "unit":"R3", "power": 532}
+      {"ts": 1608710400000, "u":"R3", "mw": 528},
+      {"ts": 1608710400000, "u":"R4", "mw": 529},
+      {"ts": 1608624000000, "u":"R3", "mw": 530},
+      {"ts": 1608624000000, "u":"R4", "mw": 531},
+      {"ts": 1608192000000, "u":"R3", "mw": 532}
     ]
   },
+  "transform": [
+    {"calculate": "now()-datum.ts", "as": "offset"},
+    {"filter":"datum.offset < 262799000"}
+  ],
   "mark": {
     "type": "line",
     "point": true,
     "size":3
   },
   "encoding": {
-    "x": {"field": "timestamp", "type": "temporal", "timeUnit": "monthdatehoursminutes", "axis": {"grid": true, "title":"Time"}},
-    "y": {"field": "power", "type": "quantitative", "scale":{"domain":[0,1500]}, "axis": {"grid": true, "title":"Power, MW"}},
-    "color": {"field": "unit", "type": "nominal", "title":"Unit", "scale": {"domain": ["F1", "F2", "F3", "O3", "R3", "R4"],"range": ["#d95f02", "#e6ab02", "#a6761d", "#66a61e", "#7570b3", "#393b79"]}},
+    "x": {"field": "ts", "type": "temporal", "timeUnit": "monthdatehoursminutes", "axis": {"grid": true, "title":"Time"}},
+    "y": {"field": "mw", "type": "quantitative", "scale":{"domain":[0,1500]}, "axis": {"grid": true, "title":"Power, MW"}},
+    "color": {"field": "u", "type": "nominal", "title":"Unit", "scale": {"domain": ["F1", "F2", "F3", "O3", "R3", "R4"],"range": ["#d95f02", "#e6ab02", "#a6761d", "#66a61e", "#7570b3", "#393b79"]}},
     "tooltip": [
-      {"field": "unit", "type": "nominal", "title": "Unit"},
-      {"field": "power", "type": "quantitative", "title": "Power"},
-      {"field": "timestamp", "type": "temporal", "title": "Date", "timeUnit":"monthdatehoursminutesseconds"}
+      {"field": "u", "type": "nominal", "title": "Unit"},
+      {"field": "mw", "type": "quantitative", "title": "Power, MW"},
+      {"field": "ts", "type": "temporal", "title": "Date", "timeUnit":"monthdatehoursminutesseconds"}
     ]
   }
 }
