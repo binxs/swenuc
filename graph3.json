@@ -3,15 +3,7 @@
   "description": "Nuclear Production, 3 days overview",
   "width":800,
   "height":400,
-  "data": {
-    "values": [
-      {"ts": 1608710400000, "u":"R3", "mw": 528},
-      {"ts": 1608710400000, "u":"R4", "mw": 529},
-      {"ts": 1608624000000, "u":"R3", "mw": 530},
-      {"ts": 1608624000000, "u":"R4", "mw": 531},
-      {"ts": 1608192000000, "u":"R3", "mw": 532}
-    ]
-  },
+  "data": {"url": "production72.json"},
   "transform": [
     {"calculate": "now()-datum.ts", "as": "offset"},
     {"filter":"datum.offset < 262799000"}
