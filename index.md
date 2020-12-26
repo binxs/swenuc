@@ -1,6 +1,6 @@
-# Production Tracker (under construction)
+# Power Production Tracker (under construction)
 
-## 3 Days Overview
+## 72 Hours Overview
 
 <div id="html" markdown="0">
 <div id="day3" markdown="0"></div>
@@ -13,7 +13,7 @@
   }).catch(console.error);
 </script></div>
 
-## Month Overview
+## 30 Days Overview
 
 <div id="html" markdown="0">
 <div id="month1" markdown="0"></div>
@@ -27,6 +27,6 @@
 
 ### About
 
-Data is scraped from the publicly available sites of the producers - Vattenfall AB ([Forsmark F1, F2, F3](https://group.vattenfall.com/se/var-verksamhet/forsmark) and [Ringhals R3, R4](https://group.vattenfall.com/se/var-verksamhet/ringhals)) and OKG Aktiebolag([Oskarshamn (O3)](https://www.okg.se/en)).
+Data is scraped from the publicly available sites of the producers - Vattenfall AB ([Forsmark F1, F2, F3](https://group.vattenfall.com/se/var-verksamhet/forsmark) and [Ringhals R3, R4](https://group.vattenfall.com/se/var-verksamhet/ringhals)) and OKG Aktiebolag([Oskarshamn O3](https://www.okg.se/en)).
 
 &copy; 2021 Gennady Loskutov
