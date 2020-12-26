@@ -1,4 +1,4 @@
-# Power Production Tracker (under construction)
+# Power Production Tracker
 
 ## 72 Hours Overview
 
