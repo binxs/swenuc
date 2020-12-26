@@ -4,10 +4,6 @@
   "width":800,
   "height":400,
   "data": {"url": "production72.json"},
-  "transform": [
-    {"calculate": "now()-datum.ts", "as": "offset"},
-    {"filter":"datum.offset < 262799000"}
-  ],
   "mark": {
     "type": "line",
     "point": true,
