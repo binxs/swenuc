@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 600, "height": 300,
+  "data": {"url": "production72.json"},
+  "transform": [{
+      "window": [{
+        "op": "lag",
+        "field":"mw",
+        "param":1,
+        "as": "mw_1"
+      }],
+      "sort": [
+        {"field": "ts", "order": "ascending"}
+      ],
+      "groupby": [
+        "u"
+      ]
+    }],
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "mw_1", "type": "quantitative", "title":"Power, MW (previous 3 hours)"
+    },
+    "y": {
+      "field": "mw", "type": "quantitative", "title":"Power, MW"
+    },
+    "color": {
+      "field": "u",
+      "type": "nominal", "title":"Unit", "scale": {"domain": ["F1", "F2", "F3", "O3", "R3", "R4"],"range": ["#d95f02", "#e6ab02", "#a6761d", "#66a61e", "#7570b3", "#393b79"]}
+    },
+    "tooltip": [
+      {"field": "u", "type": "nominal", "title": "Unit"},
+      {"field": "ts", "type": "temporal", "title": "Date", "timeUnit":"monthdatehoursminutesseconds"},
+      {"field": "mw_1", "type": "quantitative", "title": "From power, MW"},
+      {"field": "mw", "type": "quantitative", "title": "To power, MW"}
+    ]
+  }
+}
