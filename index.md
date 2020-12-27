@@ -2,7 +2,7 @@
 
 ## 72 Hours Overview
 
-<div id="html" markdown="0">
+<div id="html1" markdown="0">
 <div id="day3" markdown="0"></div>
 
 <script type="text/javascript" markdown="0">
@@ -13,9 +13,22 @@
   }).catch(console.error);
 </script></div>
 
+## 72 Hours Lag
+
+<div id="html2" markdown="0">
+<div id="dayLag" markdown="0"></div>
+
+<script type="text/javascript" markdown="0">
+  var specLag = "graphLag.json";
+  var opt = { actions: {export: true, source: false, compiled: false, editor: false}};
+  vegaEmbed('#dayLag', specLag, opt).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script></div>
+
 ## 30 Days Overview
 
-<div id="html" markdown="0">
+<div id="html3" markdown="0">
 <div id="month1" markdown="0"></div>
 
 <script type="text/javascript" markdown="0">
