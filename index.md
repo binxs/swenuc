@@ -2,6 +2,8 @@
 
 ## 72 Hours Overview
 
+Mean values over three hours per unit for last 72 hours
+
 <div id="html1" markdown="0">
 <div id="day3" markdown="0"></div>
 
