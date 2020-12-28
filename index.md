@@ -2,7 +2,7 @@
 
 ## 72 Hours Overview
 
-Mean values over three hours per unit for last 72 hours
+Mean values over three hours for each unit during last 72 hours.
 
 <div id="html1" markdown="0">
 <div id="day3" markdown="0"></div>
@@ -17,6 +17,8 @@ Mean values over three hours per unit for last 72 hours
 
 ## 72 Hours Lag
 
+Correlation between powers with three hours interval during last 72 hours.
+
 <div id="html2" markdown="0">
 <div id="dayLag" markdown="0"></div>
 
@@ -29,6 +31,8 @@ Mean values over three hours per unit for last 72 hours
 </script></div>
 
 ## 30 Days Overview
+
+Mean day values for each unit during last 30 days.
 
 <div id="html3" markdown="0">
 <div id="month1" markdown="0"></div>
