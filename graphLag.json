@@ -16,7 +16,7 @@
         "u"
       ]
     }],
-  "mark": "circle",
+  "mark": { "type":"circle", "size":50, "opacity":0.5 },
   "encoding": {
     "x": {
       "field": "mw_1", "type": "quantitative", "title":"Power, MW (previous 3 hours)"
