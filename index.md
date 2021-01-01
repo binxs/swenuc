@@ -48,4 +48,6 @@ Mean day values for each unit during last 30 days.
 
 Data is scraped from the publicly available sites of the producers - Vattenfall AB ([Forsmark F1, F2, F3](https://group.vattenfall.com/se/var-verksamhet/forsmark) and [Ringhals R3, R4](https://group.vattenfall.com/se/var-verksamhet/ringhals)) and OKG Aktiebolag ([Oskarshamn O3](https://www.okg.se/en)).
 
+Diagrams are created using [Vega-Lite](https://vega.github.io/).
+
 &copy; 2021 [Gennady Loskutov](https://twitter.com/binxs_se)
